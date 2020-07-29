@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Sample Site</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  
+</head>
+
+<body class="theme-dark">
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <a href="/" class="nav-link">
+          <span class="link-text">Justin Baur</span>
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            aria-hidden="true"
+            class="icon icon-tabler icon-tabler-arrow-right-circle"  
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="#2c3e50" 
+            fill="none" 
+            stroke-linecap="round" 
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z"/>
+            <circle cx="12" cy="12" r="9" />
+            <line x1="16" y1="12" x2="8" y2="12" />
+            <line x1="16" y1="12" x2="12" y2="16" />
+            <line x1="16" y1="12" x2="12" y2="8" />
+          </svg>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="portfolio.html" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            class="icon icon-tabler icon-tabler-apps" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            fill="none" 
+            stroke-linecap="round" 
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z"/>
+            <rect x="4" y="4" width="6" height="6" rx="1" />
+            <rect x="4" y="14" width="6" height="6" rx="1" />
+            <rect x="14" y="14" width="6" height="6" rx="1" />
+            <line x1="14" y1="7" x2="20" y2="7" />
+            <line x1="17" y1="4" x2="17" y2="10" />
+          </svg>
+          <span class="link-text">Portfolio</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="blog.html" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            class="icon icon-tabler icon-tabler-book" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            fill="none" 
+            stroke-linecap="round" 
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z"/>
+            <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+            <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+            <line x1="3" y1="6" x2="3" y2="19" />
+            <line x1="12" y1="6" x2="12" y2="19" />
+            <line x1="21" y1="6" x2="21" y2="19" />
+          </svg>
+          <span class="link-text">Blog</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://github.com/justindbaur" class="nav-link external" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            class="icon icon-tabler icon-tabler-brand-github" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            fill="none" 
+            stroke-linecap="round" 
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z"/>
+            <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" />
+          </svg>
+          <span class="link-text">Github</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/in/justinbaur/" target="_blank" class="nav-link external">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            class="icon icon-tabler icon-tabler-briefcase" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            fill="none" s
+            troke-linecap="round" 
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z"/>
+            <rect x="3" y="7" width="18" height="13" rx="2" />
+            <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+            <line x1="12" y1="12" x2="12" y2="12.01" />
+            <path d="M3 13a20 20 0 0 0 18 0" />
+          </svg>
+          <span class="link-text">Linkedin</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" id="themeSwitcher" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            class="icon icon-tabler icon-tabler-brightness-up" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            fill="none" 
+            stroke-linecap="round" 
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z"/>
+            <circle cx="12" cy="12" r="3" />
+            <line x1="12" y1="5" x2="12" y2="3" />
+            <line x1="17" y1="7" x2="18.4" y2="5.6" />
+            <line x1="19" y1="12" x2="21" y2="12" />
+            <line x1="17" y1="17" x2="18.4" y2="18.4" />
+            <line x1="12" y1="19" x2="12" y2="21" />
+            <line x1="7" y1="17" x2="5.6" y2="18.4" />
+            <line x1="6" y1="12" x2="4" y2="12" />
+            <line x1="7" y1="7" x2="5.6" y2="5.6" />
+          </svg>
+          <span class="link-text">Theme</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+  <main>
+    <h1>HTML Ipsum Presents</h1>
+
+    <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis
+      egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+      amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit
+      amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>,
+      ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis
+      tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+    <h2>Header Level 2</h2>
+
+    <ol>
+      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+      <li>Aliquam tincidunt mauris eu risus.</li>
+    </ol>
+
+    <blockquote>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet
+        congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis
+        mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
+      </p>
+    </blockquote>
+
+    <h3>Header Level 3</h3>
+
+    <ul>
+      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+      <li>Aliquam tincidunt mauris eu risus.</li>
+    </ul>
+
+    <h1>HTML Ipsum Presents</h1>
+
+    <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis
+      egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+      amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit
+      amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>,
+      ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis
+      tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+    <h2>Header Level 2</h2>
+
+    <ol>
+      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+      <li>Aliquam tincidunt mauris eu risus.</li>
+    </ol>
+
+    <blockquote>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet
+        congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis
+        mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
+      </p>
+    </blockquote>
+
+    <h3>Header Level 3</h3>
+
+    <ul>
+      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+      <li>Aliquam tincidunt mauris eu risus.</li>
+    </ul>
+  </main>
+</body>
+<script src='out/main.js'></script>
+</html>
